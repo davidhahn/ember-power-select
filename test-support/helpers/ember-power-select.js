@@ -47,7 +47,7 @@ export function typeInSearch(scopeOrText, text) {
 export function clickTrigger(scope, options = {}) {
   let selector = '.ember-power-select-trigger';
   if (scope) {
-    selector = `${scope} ${selector}`;
+    selector = `${scope}${selector}`;
   }
   return click(selector, options);
 }
